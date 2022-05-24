@@ -1,0 +1,38 @@
+.row{
+    margin-top: 100px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.input-group{
+    width:45%;
+}
+
+.input-group-text{
+    font-size: 2rem;
+}
+
+.cart_phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 15%;
+}
+
+.cart_phone .cart_icon{
+    font-size: 2rem;
+}
+
+.cart_phone h2{
+    margin:0;
+    padding-left: 15px;
+}

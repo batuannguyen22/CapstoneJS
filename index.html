@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Shop</title>
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <h1 class="text-center text-primary">Phone Shop</h1>
+  <div class="input-group mx-auto">
+    <div class="input-group-prepend">
+      <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>
+    <select class="form-control" id="chucvu" onchange="filterPhone()">
+      <option>Chọn loại điện thoại</option>
+      <option>Iphone</option>
+      <option>Samsung</option>
+    </select>
+  </div>
+  <div>
+    <div class="row mt-5" id="productList"></div>
+  </div>
+  <div class="cart_phone ms-3">
+    <div class="cart_icon">
+      <i class="fa fa-shopping-cart"></i>
+    </div>
+    <h2>Giỏ hàng</h2>
+  </div>
+  <div>
+    <div id="productCart"></div>
+  </div>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+    integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./model/product.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
